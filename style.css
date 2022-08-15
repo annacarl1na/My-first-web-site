@@ -1,0 +1,121 @@
+* {
+    margin:0;     
+    padding:0 } 
+/* inicia todos os elementos com margin 0 e padding 0*/
+.container-principal{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(50, 43, 43);}
+/* definir as propriedades do topo*/
+header{ 
+    width: 100%; 
+    height: 100px;
+    background:#000000;
+    position: relative; 
+    top: 0;}    
+/*definir as propriedades do logo*/
+body{
+    background-image : url("../img/banner.jpg");}
+    
+.logo{
+    position: absolute; 
+    width: 350px;
+    height: auto;}
+
+.logo img{
+    width: 112%;
+    margin-left: 0%;}
+/*definir as propriedades do menu */
+nav{
+    position: absolute; 
+    right: 30px; 
+    bottom: 0px;}
+nav ul li{
+    float:left;
+    Color: #f36506;
+    width: auto;
+    margin: 0.8em;
+    margin-top: 0%;
+    font-size: 1.4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;}
+nav ul li a{
+    text-decoration: none;
+    color: #f5f1f1;}
+nav ul li a:hover{ color: #f53707;}
+/*definir as propriedades do banner/imagem principal */     
+#banner{
+    width: 100%;}
+#banner img{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 0;}
+.modalDialog{
+    position: fixed;
+    font-family: 'Trebuchet MS';
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0;
+    background: black;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: none;}
+.modalDialog:target{
+    display: block;
+    opacity: 1;
+    pointer-events: auto;}
+.modalDialog div{
+    width: 500px;
+    position: relative;
+    margin: 1% auto;
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 10px;
+    background: #ffffff;}
+.modalDialog p{
+    margin-top: 5%;
+    margin-bottom: 5%;}
+.modalDialog img{
+    width: 50%;
+    position: relative;
+    margin-left: 25%;}
+.close{
+    background-color: aquamarine;
+    color: azure;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;}
+.close:hover{
+    background-color: aquamarine;}
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    position: relative;
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;}
+footer .footer-text{
+    width: 30%;
+    margin: 0.9em;
+    position: relative;
+    float: left;}
+footer .footer-text a{
+    color: azure;}
+/* define a cor de fundo das páginas parcerias, sobre e contat0 */
+.color-page{ 
+    background-color: #f5f1f1;
+}
